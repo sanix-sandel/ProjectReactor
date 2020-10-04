@@ -1,10 +1,10 @@
 package com.sanix.ReactiveTodo.domain;
 
-import lombok.Data;
+
 
 import java.time.LocalDateTime;
 
-@Data
+
 public class ToDo {
 
     private String id;
@@ -32,5 +32,37 @@ public class ToDo {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public LocalDateTime getCreated() {
+        return created;
+    }
+
+    public void setCreated(LocalDateTime created) {
+        this.created = created;
+    }
+
+    public LocalDateTime getModified() {
+        return modified;
+    }
+
+    public void setModified(LocalDateTime modified) {
+        this.modified = modified;
+    }
+
+    public boolean isCompleted() {
+        return completed;
+    }
+
+    public void setCompleted(boolean completed) {
+        this.completed = completed;
     }
 }
